@@ -3,7 +3,8 @@ kind: VPC
 metadata:
   name: vpc
 spec:
-  cidrBlock: 192.168.0.0/16
+  forProvider:
+    cidrBlock: 192.168.0.0/16
   deletionPolicy: Delete
   providerConfigRef:
     name: aws-provider
