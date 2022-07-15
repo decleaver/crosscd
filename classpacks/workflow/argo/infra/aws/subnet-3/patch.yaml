@@ -6,3 +6,5 @@ spec:
   forProvider:
     cidrBlock: 192.168.192.0/18
     availabilityZone: us-west-2c
+    vpcIdRef:
+      name: argo-west-vpc
