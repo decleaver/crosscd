@@ -6,3 +6,4 @@ spec:
   forProvider:
     groupName: argo-demo-eks-sg
     description: security group for wordpress eks
+    region: us-east-1

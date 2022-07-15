@@ -6,6 +6,7 @@ spec:
   forProvider:
     groupName: argo-demo-rds-sg
     description: security group for wordpress rds
+    region: us-east-1
     ingress:
       - fromPort: 3306
         toPort: 3306
