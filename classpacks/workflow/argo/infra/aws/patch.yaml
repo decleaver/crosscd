@@ -119,15 +119,15 @@ spec:
 # spec:
 #   vpcIdRef:
 #     name: argo-vpc
-# ---
-# apiVersion: ec2.aws.crossplane.io/v1beta1
-# kind: VPC
-# metadata:
-#   name: vpc
-# spec:
-#   cidrBlock: 192.168.0.0/16
-#   enableDnsSupport: true
-#   enableDnsHostNames: true
+---
+apiVersion: ec2.aws.crossplane.io/v1beta1
+kind: VPC
+metadata:
+  name: vpc
+spec:
+  cidrBlock: 192.168.0.0/16
+  enableDnsSupport: true
+  enableDnsHostNames: true
 # ---
 # apiVersion: compute.aws.crossplane.io/v1alpha3
 # kind: EKSClusterClass
