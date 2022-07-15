@@ -5,3 +5,5 @@ metadata:
 spec:
   forProvider:
     policyArn: arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
+    roleNameRef:
+      name: argo-iamrole
