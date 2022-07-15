@@ -3,6 +3,7 @@ kind: RolePolicyAttachment
 metadata:
   name: cluster-iamrolepolicyattachment
 spec:
+  policyArn: arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
   forProvider:
     roleNameRef:
       name: argo-iamrole
@@ -12,6 +13,7 @@ kind: RolePolicyAttachment
 metadata:
   name: service-iamrolepolicyattachment
 spec:
+  policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
   forProvider:
     roleNameRef:
       name: argo-iamrole
