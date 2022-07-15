@@ -5,6 +5,7 @@ metadata:
 spec:
   forProvider:
     cidrBlock: 192.168.0.0/16
+    region: us-east-1
   deletionPolicy: Delete
   providerConfigRef:
     name: aws-provider
