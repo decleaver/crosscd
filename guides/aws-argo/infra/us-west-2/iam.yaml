@@ -32,11 +32,11 @@ metadata:
     provider: aws
   name: argo-west-cluster-iamrolepolicyattachment
 spec:
-  policyArn: arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
   forProvider:
+    policyArn: arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
     roleNameRef:
       name: argo-west-iamrole
 ---
@@ -47,10 +47,10 @@ metadata:
     provider: aws
   name: argo-west-service-iamrolepolicyattachment
 spec:
-  policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
   providerConfigRef:
     name: aws-provider-west
   deletionPolicy: Delete
   forProvider:
+    policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
     roleNameRef:
       name: argo-west-iamrole
